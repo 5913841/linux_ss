@@ -2,7 +2,7 @@
 #define SHADOW_STACK_H_
 
 #define SHADOW_STACK_BASE (0xffff8)
-#define MAX_SHADOW_STACK_SIZE (0x800)
+#define MAX_SHADOW_STACK_SIZE (0x800 / 8)
 #define MAX_SHADOW_STACK_BACKUPS (0x7)
 
 __asm__(".macro parse_v var val\n\t"
